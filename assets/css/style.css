@@ -11,9 +11,6 @@ body {
 }
 
 /* Navbar */
-/* nav{
-  height: 6.25rem !important;
-} */
 
 /* Header */
 header{
@@ -24,8 +21,25 @@ header{
   /* padding: 7rem 0 5rem 0; */
 }
 header h1{
-  font-size : clamp(1rem, 10vw, 3rem);
+  /* font-size : clamp(1rem, 10vw, 3rem); */
   font-weight: bold;
+}
+.typewriter {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: 1s linear, text 5s;
+}
+
+
+@keyframes text {
+	0% { 
+    width: 0; 
+  }
+	100% { 
+    /* width: 20ch;  */
+    /* border-right: none; */
+  }
 }
 .greenFont{
   color: #7DB800;
@@ -34,6 +48,30 @@ header h1{
   font-size: 2rem;
   margin: 0rem .5rem;
 }
+.wrapper{
+  overflow: hidden;
+}
+.wrapper img{
+  animation: 1s linear ,alternate wrapper 5s;
+}
+@keyframes wrapper {
+	0% { 
+    scale: 100%;
+  }
+  50% { 
+    scale: 120%;
+  }
+	100% { 
+    scale: 100%;
+  }
+  
+}
+/* .wrapper img{
+  transition: all 1s;
+}
+.wrapper:hover img{
+  scale: 120%;
+} */
 /* About */
 .About{
   background: #161616;
@@ -45,7 +83,10 @@ header h1{
   background: #7DB800 !important;
   color: black;
 }
-
+.hideme
+{
+    opacity:0;
+}
 /* Expertise */
 .Lang {
   display: flex;
