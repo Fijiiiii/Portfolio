@@ -86,6 +86,7 @@ header h1{
 .hideme
 {
     opacity:0;
+    transition: .5s ease;
 }
 /* Expertise */
 .Lang {
