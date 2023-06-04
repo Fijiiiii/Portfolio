@@ -8,31 +8,40 @@
     <link rel="stylesheet" href="./assets/css/slick.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <script src="./assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <!-- <script src="./assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script> -->
     <title>Portfolio</title>
 </head>
 <body>
     <!-- Navigation-->
-    <nav  class="navbar navbar-expand-lg navbar-dark py-1" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand logo" href="#Body"><h1>Fiji</h1></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link m-4 mb-0 mt-0 text-uppercase" href="#About">About</a></li>
-                    <li class="nav-item"><a class="nav-link m-4 mb-0 mt-0 text-uppercase" href="#Expertise">Expertise</a></li>
-                    <li class="nav-item"><a class="nav-link m-4 mb-0 mt-0 text-uppercase" href="#Projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link m-4 mb-0 mt-0 text-uppercase" href="#Contact">Contact</a></li>
-    
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">The South Solution Inc.</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navmenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0 text-center">
+          <li class="nav-item"><a class="nav-link m-4 mb-0 mt-0 text-uppercase" href="#About">About</a></li>
+          <li class="nav-item"><a class="nav-link m-4 mb-0 mt-0 text-uppercase" href="#Expertise">Expertise</a></li>
+          <li class="nav-item"><a class="nav-link m-4 mb-0 mt-0 text-uppercase" href="#Projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link m-4 mb-0 mt-0 text-uppercase" href="#Contact">Contact</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="row" style="height: 90vh !important;">
-                <div class="col d-flex justify-content-center align-items-center">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
                     <div class="d-flex flex-column">
                         <h1 class="mb-5">Hello, <span class="greenFont">I’m Carl,</span> <br>
                             a Web Developer <br>
@@ -43,7 +52,7 @@
                             exceptional service and delivering results that exceed expectations.
                         </h6>
                         <h5 class="mb-2"><strong>Social Links</strong></h5>
-                        <div class="d-flex">
+                        <div class="socAlign">
     
                             <a href="https://www.facebook.com/carl.oquila" class="greenFont socialLinks"><i class="fa fa-facebook"></i></a>
                             <a href="https://www.instagram.com/lxcxrl/" class="greenFont socialLinks"><i class="fa fa-instagram"></i></a>
@@ -53,7 +62,7 @@
                           </div>
                     </div>
                 </div>
-                <div class="col text-center d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 text-center d-flex justify-content-center align-items-center">
                     <img src="./assets/images/CJ35.jpg" class="img-fluid w-75 rounded-pill" alt="">
                 </div>
             </div>
@@ -62,11 +71,11 @@
     <!--About-->
     <section class="About" id="About">
         <div class="container">
-        <div class="row" style="height: 100vh !important;">
-            <div class="col d-flex justify-content-center align-items-center">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
                 <img src="./assets/images/Carl.jpg" alt="" class="img-fluid w-75" style="border-radius: 3rem;">
             </div>
-            <div class="col d-flex justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
                 <div >
                 <h1 class="greenFont"><Strong>About</Strong></h1>
                 <hr>
@@ -97,7 +106,7 @@
             <h6>Technology stacks that I am currently working on.</h6>
           </div>
           <div class="Lang">
-            <h2 class="align-self-baseline"><strong>Web Development Stack</strong></h2>
+            <h2 class="langAlignLabel"><strong>Web Development Stack</strong></h2>
             <div class="skill container">
             
               <div class="items">
@@ -140,7 +149,7 @@
           </div>
 
           <div class="Lang">
-            <h2 class="align-self-baseline"><strong>Other Development Tools</strong></h2>
+            <h2 class="langAlignLabel"><strong>Other Development Tools</strong></h2>
             <div class="skill container">
             
               <div class="items">
@@ -172,16 +181,95 @@
         </div>
     </Section>
     <!-- Projects -->
-    <section id="Projects" style="background: #161616 !important; ">
+    <section id="Projects" style="background: #161616 !important; padding: 3rem 0;">
       <div class="container">
-        <div class="" style="height: 100vh;">
+        <div class="">
           <h1 class="text-center fw-bold greenFont">Finished Projects</h1>
+        </div>
+        <div class="">
+          <div class="projCarousel">
+            <div class="items">
+              <a href="https://metroprojects.ph/" class="m-3 d-flex justify-content-center flex-column">
+                <img src="./assets/images/Draftech.png" class="img-fluid w-100 h-100" alt="">
+                <button class="btn btn-success w-25 align-self-center mt-3">View Projects</button>
+              </a>
+            </div>
+            <div class="items">
+              <a href="https://draftectfinal.vercel.app/" class="m-3 d-flex justify-content-center flex-column">
+                <img src="./assets/images/Metro.png" class="img-fluid w-100 h-100" alt="">
+                <button class="btn btn-success w-25 align-self-center mt-3">View Projects</button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- Contact -->
+    <section>
+      <div class="container">
+        <div class="row ">
+          <div class="col-lg-6">
+            <div class="contBody d-flex justify-content-center align-items-center flex-column">
+              <h1 class="contLabel">Have an Awesome<br>
+                Project Idea?</h1>
+                <h6>Let’ discuss your vision.</h6>
+            </div>
+          </div>
+          
+          <div class="col-lg-6">
+            <div class="">
+              
+              <div class=" contBody d-flex justify-content-center align-items-center flex-column">
+                <a data-target="#contactMe" data-toggle="modal">
+                  <img src="./assets/images/Sent.png" alt="">
+                </a>
+                <button class="btn btn-dark" data-target="#contactMe" data-toggle="modal">carl@southsolutions.com</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-dark">
+      <div>
+        <h6 class="text-light">
+          Copyright | SOUTH SOLUTIONS 2023
+        </h6>
+      </div>
+
+
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactMe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content p-4">
+          <form>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+              <label for="subject">Subject</label>
+              <input type="text" class="form-control" id="subject" aria-describedby="emailHelp" placeholder="Enter subject">
+            </div>
+            <div class="form-group">
+              <label for="textArea">Example textarea</label>
+              <textarea class="form-control" id="textArea" placeholder="Enter text" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Submit</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+    
 </body>
 </html>

@@ -34,24 +34,42 @@ $(function(){
   });
 }
 );
-
-$(function () {
-  $(document).on("load scroll", function() {
-    const navbar = document.querySelector('nav');
-    document.onscroll = () => {
-    if (window.scrollY > 0) {
-        navbar.classList.add('stix');
-    } else {
-        navbar.classList.remove('stix');
-    }
-};
+$(function(){
+  $('.projCarousel').slick({
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 1,
+    arrows:false,
+    autoplay: true,
+    infinite: true,
+    speed: 300,
+    dots:false,
+    fade: true,
+    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+    touchThreshold: 100,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          dots:false,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1,
+          
+        }
+      },
+      {
+        breakpoint: 425,
+        settings: {
+          arrows: false,
+          dots:false,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
-});
-const navbar = document.querySelector('nav');
-window.onload = () => {
-  if (window.scrollY > 100) {
-    navbar.classList.add('stix');
-} else {
-    navbar.classList.remove('stix');
 }
-}
+);
