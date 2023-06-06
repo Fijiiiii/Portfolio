@@ -13,7 +13,7 @@ $(function(){
         breakpoint: 992,
         settings: {
           arrows: false,
-          dots:true,
+          dots:false,
           centerMode: true,
           centerPadding: '0px',
           slidesToShow: 2,
@@ -24,7 +24,7 @@ $(function(){
         breakpoint: 425,
         settings: {
           arrows: false,
-          dots:true,
+          dots:false,
           centerMode: true,
           centerPadding: '0px',
           slidesToShow: 2,
