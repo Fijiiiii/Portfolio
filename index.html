@@ -41,7 +41,7 @@
     <header>
         <div class="container d-flex justify-content-center align-items-center">
             <div class="row">
-                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center order2">
                     <div class="d-flex flex-column">
                         <h1 class="mb-5 typewriter">Hello, <span class="greenFont">I’m Carl,</span> <br>
                             a Web Developer <br>
@@ -62,7 +62,7 @@
                           </div>
                     </div>
                 </div>
-                <div class="col-lg-6 text-center d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 text-center d-flex justify-content-center align-items-center order1">
                     <div class="wrapper rounded-circle">
                       <img src="./assets/images/CJ35.jpg" class="img-fluid w-75" alt="">
                     </div>
@@ -79,9 +79,9 @@
             </div>
             <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
                 <div >
-                <h1 class="greenFont"><Strong>About</Strong></h1>
+                <h1 class="greenFont center-mobile"><Strong>About</Strong></h1>
                 <hr>
-                <h6 class="text-light">
+                <h6 class="text-light center-mobile">
                     "Hello, I'm Carl; and I love exploring the web while expanding my skills to build things for it. My journey as a developer started when I was in junior high school. A tutorial on how to use HTML to display pictures with labels on my browser sparked my interest in this job. After that, I became completely hooked on the world of computers, and the rest is history.
                     <br><br>
                     Over the years, I've grown my interest in coding by learning about information technology, but mostly by building websites with JavaScript and CSS to challenge myself. This allowed me to discover more things that I never thought I would and do a lot more I never thought I could.
@@ -91,7 +91,7 @@
                 <div class="resume">
                     <a href="./assets/documents/Carl-Oquila.pdf" download="Carl_Oquila"><div class="">
                     <div class=" Download">
-                        <button class="downloadCV btn"><strong>Download CV</strong></button>
+                        <button class="downloadCV btn" href="./assets/documents/Carl-Oquila.pdf" download="Carl_Oquila"><strong>Download CV</strong></button>
                     </div>
                     </div></a>
                 </div>
@@ -222,10 +222,10 @@
             <div class="hideme">
               
               <div class=" contBody d-flex justify-content-center align-items-center flex-column">
-                <a data-target="#contactMe" data-toggle="modal">
+                <a href="mailto:carloquila12@gmail.com">
                   <img src="./assets/images/Sent.png" alt="">
                 </a>
-                <button class="btn btn-dark" data-target="#contactMe" data-toggle="modal">carl@southsolutions.com</button>
+                <button class="btn btn-dark" href="mailto:carloquila12@gmail.com">carloquila12@gmail.com</button>
               </div>
             </div>
           </div>
@@ -235,35 +235,12 @@
     <!-- Footer -->
     <footer class="bg-dark">
       <div>
-        <h6 class="text-light">
+        <h6 class="text-light center-mobile">
           Copyright | SOUTH SOLUTIONS 2023
         </h6>
       </div>
-
-
     </footer>
 
-    <!-- Modal -->
-    <div class="modal fade" id="contactMe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content p-4">
-          <form>
-            <div class="form-group">
-              <label for="email">Email address</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-              <label for="subject">Subject</label>
-              <input type="text" class="form-control" id="subject" aria-describedby="emailHelp" placeholder="Enter subject">
-            </div>
-            <div class="form-group">
-              <label for="textArea">Example textarea</label>
-              <textarea class="form-control" id="textArea" placeholder="Enter text" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-dark w-100">Submit</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </form>
-        </div>
-      </div>
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
     <script src="./assets/js/script.js"></script>

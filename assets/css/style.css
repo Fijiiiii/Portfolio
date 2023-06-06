@@ -120,6 +120,10 @@ header h1{
   height: 100%;
   min-height: 40vh;
 }
+.footer{
+  z-index: 1;
+  
+}
 @media (max-width: 991px) {
   /* Header */
   header{
@@ -131,8 +135,9 @@ header h1{
     text-align: center;
   }
   header h1{
-    font-size : clamp(1rem, 10vw, 3rem);
+    font-size : clamp(1rem, 10vw, 2rem);
     font-weight: bold;
+    margin-top: 1rem;
   }
   .greenFont{
     color: #7DB800;
@@ -141,8 +146,34 @@ header h1{
     font-size: 2rem;
     margin: 0rem .5rem;
   }
-
-
+  .order1{
+    order: 1;
+  }
+  .order2{
+    order: 2;
+  }
+  .greenFont{
+    margin-top: 1rem;
+  }
+  .resume{
+    display: flex;
+    justify-content: center;
+  }
+  .techStackCard{
+    height: 100%;
+    width: 100%;
+    max-width: 10rem !important; 
+    min-height: 10rem !important;
+    background: #161616 !important; 
+    border-radius: 2rem !important;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .Lang .skill .slick-dots li button{
+    width: 10px;
+    height: 10px;
+  }
 
 
   .Lang {
@@ -215,6 +246,9 @@ header h1{
   .contBody{
     height: 100%;
     min-height: 25vh;
+  }
+  .center-mobile{
+    text-align: center;
   }
 }
 

@@ -16,7 +16,7 @@ $(function(){
           dots:true,
           centerMode: true,
           centerPadding: '0px',
-          slidesToShow: 1,
+          slidesToShow: 2,
           
         }
       },
